@@ -14,7 +14,7 @@
 * [Traits](src/main/scala/com/skysoftatm/Car.scala)
 * [Visibility](src/main/scala/com/skysoftatm/Visibility.scala)
 * [Generics](src/main/scala/com/skysoftatm/Generics.scala)
-* [IfElse](src/main/scala/com/skysoftatm/IfElse.scala)
+* [If-else](src/main/scala/com/skysoftatm/IfElse.scala)
 * [Loop](src/main/scala/com/skysoftatm/Loop.scala)
 * [Pattern matching](src/main/scala/com/skysoftatm/PatternMatching.scala)
 * [Exceptions](src/main/scala/com/skysoftatm/Exceptions.scala)

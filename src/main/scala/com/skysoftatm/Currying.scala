@@ -1,6 +1,26 @@
 package com.skysoftatm
 
 object Currying {
+  def main(args: Array[String]): Unit = {
+    // Simple function call
+    multiply(2, 3)
+
+    // Currying function call
+    multiplyCurrying(2)(3)
+
+    // Use-case: syntactic sugar
+    val m = Array.ofDim[Int](3, 3)
+    m(0)(0) = 5
+
+    // Use-case: partial function syntactic sugar
+    var partial = multiply(2, _: Int)
+    partial = multiplyCurrying(2)
+
+    // Use case: higher-order function call
+    implicit val context = new Context()
+    higherOrderFunction(4, methodDependingOfAContext)
+  }
+
   def multiply(n1: Int, n2: Int): Int = {
     n1 * n2
   }
@@ -20,25 +40,5 @@ object Currying {
     } else {
       return i * 2
     }
-  }
-
-  def main(args: Array[String]): Unit = {
-    // Simple function call
-    multiply(2, 3)
-
-    // Currying function call
-    multiplyCurrying(2)(3)
-
-    // Use-case: syntactic sugar
-    val m = Array.ofDim[Int](3, 3)
-    m(0)(0) = 5
-
-    // Use-case: partial function
-    var partial = multiply(2, _: Int)
-    partial = multiplyCurrying(2)
-
-    // Use case: higher-order function call
-    implicit val context = new Context()
-    higherOrderFunction(4, methodDependingOfAContext)
   }
 }

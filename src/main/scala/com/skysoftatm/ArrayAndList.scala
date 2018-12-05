@@ -5,16 +5,17 @@ object ArrayAndList {
     // An array is also an object
     val a = new Array[Int](2)
 
-    // How to set a value?
+    // How do we set a value?
 
     // One possible way
     a.update(0, 1)
 
     // Standard way
-    // Call an object just like if it was a function
-    // Default apply() method
     a(0) = 1
     a(1) = 2
+
+    // Call an object just like if it was a function
+    // Default apply() method
 
     // Initialization alternative
     val b = Array(1, 2)

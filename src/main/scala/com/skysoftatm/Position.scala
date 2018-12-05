@@ -7,11 +7,11 @@ case class Position(x: Double, y: Double, alt: Double) {
 
     // A case class is immutable
 
+    // Comparison with regular classes is done by reference
+
     // Comparison is done by value
     if (position == Position(1.0, 2.0, 100.0)) {
       // True
     }
-
-    // Comparison with regular classes is done by reference
   }
 }

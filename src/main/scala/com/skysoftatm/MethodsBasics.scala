@@ -12,14 +12,18 @@ object MethodsBasics {
     val a, b = multipleOutputs()
 
     // Parenthesis are optional
-    // Best practice: keep parenthesis if side-effect
     val x, y = multipleOutputs
+
+    // Best practice: keep parenthesis if side-effect
 
     // Variable-arguments
     varargs(1, 2, 3, 4, 5)
 
-    // Default values
+    // Named parameters
     default(0, 2)
+    default(x = 0, y = 2)
+
+    // Default value
     default(_: Int, y = 2)
     default(y = 2)
     // default(x = 1) // Compilation error (missing required argument)

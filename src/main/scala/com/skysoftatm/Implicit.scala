@@ -16,6 +16,7 @@ class Implicit {
   object Test {
     def test() = {
       val bar = new Bar(5, 2)
+      // consume() call using a Bar?
       Consumer.consume(bar)
     }
   }
